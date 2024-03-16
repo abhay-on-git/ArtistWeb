@@ -13,3 +13,12 @@
     font-family: outfit ;
     src: url(fonts/Outfit-VariableFont_wght.ttf);
 }
+
+a{
+    transition: all 0.3s;
+}
+.btn-hover:hover{
+    background-color: #000000;
+    transform: scale(1.1);  
+    transition: 0.3s;
+}
