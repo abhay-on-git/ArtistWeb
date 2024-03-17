@@ -45,7 +45,7 @@ function Hero() {
             })}
 
           </div>
-              <Button label={"Emergency"} url={"#"} bgColor={"transparent"} hvrColor={"primary"} bdrColor={"bg-zinc-100"} />
+              <Button label={"Emergency"} url={"#"} bgColor={"transparent"} hvrColor={"primary"} bdrColor={"bg-zinc-100"} color={"white"} />
          </div>
 
          </div>
@@ -86,7 +86,7 @@ function Hero() {
         </div>
         <div className='gray  flex flex-col sm:flex sm:flex-row sm:items-center  justify-end gap-10 h-full'>
           <p className='sm:w-1/3 sm:text-2xl text-xl w-[90%]'>We build engaging websites, brands & innovative e-commerce solutions.</p>
-          <Button label="Case Studies" bgColor={"primary"} url="#" hvrColor={"black"} />
+          <Button label="Case Studies" bgColor={"primary"} url="#" hvrColor={"black"} color={"white"}/>
         </div>
       </div>
     </div>
