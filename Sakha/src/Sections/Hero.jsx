@@ -26,21 +26,22 @@ function Hero() {
       <motion.div 
       initial={{y:"-100%"}}
       animate={{ y: isNavigationOpen ? "0%" : "-100%" }}
-      transition={{duration:0.5,ease:[0.5, 1, 0.89, 1]}}
+      transition={{duration:0.3,ease:[0.5, 1, 0.89, 1]}}
       className='absolute flex items-center justify-center left-0 overlay z-10 w-full h-full bg-[#a0a0a0a4] backdrop-blur-sm'>
-         <div className='sm:w-[60%] sm:h-[85%] flex flex-col rounded-3xl bg-[#000] px-12 py-10'>
-          <div className='relative flex justify-end items-center p-1 w-full sm:h-[4vmax] '>
+         <div className='sm:w-[60%] sm:h-[85%] w-[90%] h-[75%] flex flex-col rounded-3xl bg-[#000] sm:px-12 sm:py-10 p-4'>
+          <div className='relative flex justify-end items-center p-1 w-full sm:h-[3vmax] '>
             <div 
             onClick={openNavigation}
-            className='w-[3vmax] h-[3vmax] flex items-center justify-center sm:text-[2vmax] text-white rounded-full bg-[#58555565]'><IoClose /></div>
+            className='sm:w-[3vmax] sm:h-[3vmax] w-[5vmax] h-[5vmax] flex items-center justify-center sm:text-[2vmax] text-white rounded-full cursor-pointer bg-[#58555565]'><IoClose />
+            </div>
           </div>
            {["Case Studies","Our Agency","Contact Us"].map((item,index)=>{
-            return <h1 className='text-white sm:text-[5vmax]' key={index}>{item}</h1>
+            return <h1 className='text-white sm:text-[5vmax] hover:text-zinc-400 cursor-pointer select-none text-[6vmax]' key={index}>{item}</h1>
            })}
-         <div className='w-full sm:h-[5vmax] sm:mt-10 flex items-center justify-between '>
-          <div className='w-[60%] flex items-center  justify-start p-2 sm:text-[1.2vmax] text-white gap-6 h-full'>
+         <div className='relative w-full sm:h-[5vmax] sm:mt-10 mt-2 flex  sm:flex-row sm:items-center flex-col items-start justify-between '>
+          <div className='w-[60%] mb-3 flex sm:flex-row sm:items-center flex-col-reverse items-start justify-start p-2 sm:text-[1.2vmax] text-white gap-5 h-full'>
             {["Instagram","Facebook","WhatsApp","MobileNo."].map((item,index)=>{
-              return <a href="#" key={index} className={`${index===3 ? "border border-zinc-100 rounded-full px-8 py-1 hover:bg-primary" : "border-b border-transparent hover:border-zinc-100"} `}>{item}</a>
+              return <a href="#" key={index} className={`${index===3 ? " sm:border select-none sm:border-zinc-100 sm:rounded-full sm:px-8 sm:py-1 sm:hover:bg-primary border-b border-transparent hover:border-zinc-100" : "border-b select-none border-transparent hover:border-zinc-100"} `}>{item}</a>
             })}
 
           </div>
