@@ -22,13 +22,13 @@ function Hero() {
   },[setIsNavigationOpen])
   
   return (
-    <div className='relative w-full min-h-screen overflow-hidden px-3 sm:px-16'>
+    <div className='relative w-full sm:min-h-screen px-3 sm:px-16'>
       <motion.div 
       initial={{y:"-100%"}}
       animate={{ y: isNavigationOpen ? "0%" : "-100%" }}
       transition={{duration:0.3,ease:[0.5, 1, 0.89, 1]}}
-      className='absolute flex items-center justify-center left-0 overlay z-10 w-full h-full bg-[#a0a0a0a4] backdrop-blur-sm'>
-         <div className='sm:w-[60%] sm:h-[85%] w-[90%] h-[75%] flex flex-col rounded-3xl bg-[#000] sm:px-12 sm:py-10 p-4'>
+      className='absolute flex items-center justify-center left-0 top-0 overlay z-10 w-full h-screen bg-[#a0a0a0a4] backdrop-blur-sm'>
+         <div className='sm:w-[60%] sm:h-[85%] w-[90%] h-[75%] flex flex-col z-50 rounded-3xl bg-[#000] sm:px-12 sm:py-10 p-4'>
           <div className='relative flex justify-end items-center p-1 w-full sm:h-[3vmax] '>
             <div 
             onClick={openNavigation}
@@ -50,7 +50,7 @@ function Hero() {
 
          </div>
       </motion.div>
-      <div className='w-full flex justify-between items-center sm:py-6 py-2 px-1'>
+      <div className='w-full flex justify-between items-center sm:py-6 py-4 px-1'>
         <h1 className='sm:text-4xl text-2xl font-semibold'>LOGO</h1>
         <div className='flex gap-4'>
           <button className='bg-transparent border border-zinc-900 rounded-full px-5 py-1 sm:px-8 sm:py-1'>Get in touch</button>
