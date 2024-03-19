@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './Sections/Hero'
 import Services from './Sections/Services'
 import Plans from './Sections/Plans'
+import GoodAt from './Sections/GoodAt'
 import LocomotiveScroll from 'locomotive-scroll'
 const App = () => {
   const locomotivScroll = new LocomotiveScroll();
@@ -10,6 +11,7 @@ const App = () => {
       <Hero />
       <Services/>
       <Plans/>
+      <GoodAt/>
     </div>
   )
 }

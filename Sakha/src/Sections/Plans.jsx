@@ -4,13 +4,13 @@ import SmallBtn from '../Components/SmallBtn';
 
 function Plans() {
 
- const screenSize = window.innerWidth > 640 ? <Button label={"Plans"}/> : <SmallBtn label={"Plans"} width={"12vmax"} bgColor={"primary"}/>
+ const screenSize = window.innerWidth > 640 ? <Button label={"Plans"} color={"white"}/> : <SmallBtn label={"Plans"} width={"12vmax"} bgColor={"primary"}/>
  
  return (
     <div className='w-full h-screen sm:px-16 px-5  '>
         <div className='w-full h-screen  flex sm:flex-row flex-col '>
             <div className='sm:w-1/2 flex flex-col sm:h-full h-fit'>
-                <h1 className='sm:text-6xl text-4xl font-bold sm:text-left text-center py-5 w-full sm:py-20'>Your Digital Partners.</h1>
+                <h1 className='sm:text-6xl text-4xl font-medium sm:text-left text-center py-5 w-full sm:py-20'>Your Digital Partners.</h1>
                 <p className='sm:text-2xl px-1 sm:text-left text-center sm:w-[70%] mb-24'>We partner with companies of all sizes to solve
                                                     complex business challenges and define their digital
                                                     strategies and objectives that deliver results. We
