@@ -8,7 +8,7 @@ function GoodAt() {
            <h1 className='sm:text-6xl text-[6.2vmax]  font-medium sm:mb-5'>We’re good at</h1>
            <h1 className='sm:text-[1.3vmax] mb-3'>Services</h1>
            {["E-Commerce","Website Design","Web Development","Digital Products","Brand Identities","SEO Optimisation"].map((item,index)=>{
-            return <a href="#" className='sm:text-[2.5vmax] text-[2.7vmax] font-medium' key={index}>{item}</a>
+            return <a href="#" className='sm:text-[2.2vmax] text-[2.7vmax] font-medium' key={index}>{item}</a>
            })}
         </div>
         <div className='sm:w-[55%] w-full flex items-center justify-center sm:h-full h-1/2 p-6'>
