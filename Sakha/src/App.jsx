@@ -4,6 +4,7 @@ import Services from './Sections/Services'
 import Plans from './Sections/Plans'
 import GoodAt from './Sections/GoodAt'
 import Emphasis from './Sections/Emphasis'
+import Reviews from './Sections/Reviews'
 import LocomotiveScroll from 'locomotive-scroll'
 const App = () => {
   const locomotivScroll = new LocomotiveScroll();
@@ -14,6 +15,7 @@ const App = () => {
       <Plans/>
       <Emphasis/>
       <GoodAt/>
+      <Reviews/>
     </div>
   )
 }

@@ -4,7 +4,7 @@ import SmallBtn from '../Components/SmallBtn';
 
 function Plans() {
 
- const screenSize = window.innerWidth > 640 ? <Button label={"Plans"} color={"white"}/> : <SmallBtn label={"Plans"} width={"12vmax"} bgColor={"primary"}/>
+ const screenSize = window.innerWidth > 640 ? <Button label={"Plans"} color={"white"} hvrColor={"black"}/> : <SmallBtn label={"Plans"} width={"12vmax"} bgColor={"primary"} hvrColor={"black"}/>
  
  return (
     <div className='w-full h-screen sm:px-16 px-5  '>
