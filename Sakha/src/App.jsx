@@ -6,6 +6,7 @@ import GoodAt from './Sections/GoodAt'
 import Emphasis from './Sections/Emphasis'
 import Reviews from './Sections/Reviews'
 import LocomotiveScroll from 'locomotive-scroll'
+import Footer from './Sections/Footer'
 const App = () => {
   const locomotivScroll = new LocomotiveScroll();
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Emphasis/>
       <GoodAt/>
       <Reviews/>
+      <Footer/> 
     </div>
   )
 }
