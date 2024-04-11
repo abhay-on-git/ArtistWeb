@@ -16,18 +16,28 @@ function Hero() {
 
     return () => clearInterval(intervalId);
   }, [setPhraseIndex]);
-
+  const handlecLick = ()=>{
+    
+  }
+  
+// This is the code to handle the Opening and Closing the Navigation
   const openNavigation = useCallback(()=>{
     setIsNavigationOpen(prev => !prev)
-  },[setIsNavigationOpen])
+    if(isNavigationOpen){
+      // document.addEventListener('scroll',(e)=>e.preventDefault)
+    }else{
+      // document.addEventListener('scroll',(e)=>e.preventDefault)
+    }
+  },[setIsNavigationOpen,isNavigationOpen])
   
   return (
-    <div className='relative w-full sm:min-h-screen px-3 sm:px-16'>
+    <div className='relative w-full sm:min-h-screen pointer px-3 sm:px-16'>
+    {/* ---->>>>>>  This is the code of  the Navigation Bar */}
       <motion.div 
       initial={{y:"-100%"}}
       animate={{ y: isNavigationOpen ? "0%" : "-100%" }}
       transition={{duration:0.3,ease:[0.5, 1, 0.89, 1]}}
-      className='absolute flex items-center justify-center left-0 top-0 overlay z-10 w-full h-screen bg-[#a0a0a0a4] backdrop-blur-sm'>
+      className={`fixed flex items-center justify-center left-0 top-0 overlay z-10 w-full h-screen bg-[#a0a0a0a4] backdrop-blur-sm`}>
          <div className='sm:w-[60%] sm:h-[85%] w-[90%] h-[75%] flex flex-col z-50 rounded-3xl bg-[#000] sm:px-12 sm:py-10 p-4'>
           <div className='relative flex justify-end items-center p-1 w-full sm:h-[3vmax] '>
             <div 
